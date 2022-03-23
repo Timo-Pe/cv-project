@@ -1,0 +1,139 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CV{% endblock %}
+
+{% block body %}
+
+<div class ="container">
+    <header>
+        <div class="title">
+            <h1>Timothé Périgois</h1>
+            <h2>Développeur Back-end</h2>
+            <h2>PHP | Symfony</h2>
+        </div>
+        <div class ="banner">
+            <div class ="imgPerso">
+                <img href="#" alt="imgPerso">
+            </div>
+            <div>
+                <ul class="contact">
+                    <li>Permis A et B</li>
+                    <li>06 47 87 71 36</li>
+                    <li>Timothe.perigois@gmail.com</li>
+                    <li>github.com/timo-pe</li>
+                    <li>linkedin.com/in/timothe-perigois</li>
+                </ul>
+            </div>
+            
+            <div class="qrcode">
+                <img href={{ asset("/assets/img/QRcode.png") }} alt="qrcode">
+            </div>
+        </div>
+        
+    </header>
+    <section class="left-panel">
+        <div class="training">
+            <h3>Formations</h3>
+            <div>
+                <span class="years">2021 . 2022</span>
+                <p>Formation Développeur Web et
+                    Web Mobile Spécialisation Symfony
+                    (en préparation pour le Titre Professionnel)</p>
+            </div>
+            <div>
+                <span class="years">2020</span>
+                <p>Formation Autodidacte :
+                    HTML/CSS PHP/ SQL JavaScript</p>
+            </div>
+            <div>
+                <span class="years">2020</span>
+                <p>Formation Autodidacte :
+                    HTML/CSS PHP/ SQL JavaScript</p>
+            </div>
+            <div>
+                <span class="years">2020</span>
+                <p>Formation Autodidacte :
+                    HTML/CSS PHP/ SQL JavaScript</p>
+            </div>
+            <div>
+                <span class="years">2020</span>
+                <p>Formation Autodidacte :
+                    HTML/CSS PHP/ SQL JavaScript</p>
+            </div>
+        <div class="experiences">
+            <h3>Experiences</h3>
+            <div>
+                <span class="years">2020</span>
+                <p>Formation Autodidacte :
+                    HTML/CSS PHP/ SQL JavaScript</p>
+            </div>
+            <div>
+                <span class="years">2020</span>
+                <p>Formation Autodidacte :
+                    HTML/CSS PHP/ SQL JavaScript</p>
+            </div>
+            <div>
+                <span class="years">2020</span>
+                <p>Formation Autodidacte :
+                    HTML/CSS PHP/ SQL JavaScript</p>
+            </div>
+            <div>
+                <span class="years">2020</span>
+                <p>Formation Autodidacte :
+                    HTML/CSS PHP/ SQL JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <section class ="right-panel">
+        <div class ="development-technology">
+            <h4>technologies de developpement</h4>
+            <ul>
+                <li>HTML et CSS</li>
+                <li>PHP | Symfony</li>
+                <li>Javascript | React</li>
+                <li>HTML et CSS</li>
+                <li>HTML et CSS</li>
+                <li>HTML et CSS</li>
+                <li>HTML et CSS</li>
+                <li>HTML et CSS</li>
+                <li>HTML et CSS</li>
+                <li>HTML et CSS</li>
+                <li>HTML et CSS</li>
+                <li>HTML et CSS</li>
+            </ul>
+        </div>
+        <div class ="computer-skills">
+        <h4>Compétences informatiques</h4>
+            <ul>
+                <li>Installation et administration de serveur NAS</li>
+                <li>Installation et administration de serveur NAS</li>
+                <li>Installation et administration de serveur NAS</li>
+                <li>Installation et administration de serveur NAS</li>
+                <li>Installation et administration de serveur NAS</li>
+                <li>Installation et administration de serveur NAS</li>
+                <li>Installation et administration de serveur NAS</li>
+            </ul>
+        </div>
+        <div class ="other-skills">
+        <h4>autres competences</h4>
+            <ul>
+                <li>Anglais niveau A2</li>
+                <li>Création de pièce en 3D et réalisation de plan CAO</li>
+                <li>Création de pièce en 3D et réalisation de plan CAO</li>
+                <li>Création de pièce en 3D et réalisation de plan CAO</li>
+                <li>Création de pièce en 3D et réalisation de plan CAO</li>
+            </ul>
+        </div>
+        <div class ="hobbies">
+        <h4>Loisirs</h4>
+            <ul>
+                <li>Développement personnel</li>
+                <li>Développement personnel</li>
+                <li>Développement personnel</li>
+                <li>Développement personnel</li>
+            </ul>
+        </div>
+    </section>
+</div>
+{% endblock %}

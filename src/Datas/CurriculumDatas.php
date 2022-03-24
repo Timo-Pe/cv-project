@@ -99,15 +99,4 @@ class CurriculumDatas {
         return $hobbies;
     }
 
-    public function getContact(){
-        $contact = [
-            "Permis A et B",
-            "06 47 87 71 36",
-            "Timothe.perigois@gmail.com",
-            "github.com/timo-pe",
-            "linkedin.com/in/timothe-perigois"
-        ];
-
-        return $contact;
-    }
 }

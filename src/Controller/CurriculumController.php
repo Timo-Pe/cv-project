@@ -22,7 +22,6 @@ class CurriculumController extends AbstractController
         $technologiesList = $objectDatas->getTechnologies();
         $hobbiesList = $objectDatas->getHobbies();
         $otherSkillsList = $objectDatas->getOtherSkills();
-        $contactList = $objectDatas->getContact();
       
         return $this->render('curriculum/index.html.twig', [
             'controller_name' => 'CurriculumController',
@@ -32,7 +31,6 @@ class CurriculumController extends AbstractController
             'technologiesList' => $technologiesList,
             'hobbiesList' => $hobbiesList,
             'otherSkillsList' => $otherSkillsList,
-            'contactList' => $contactList,
         ]);
     }
 }

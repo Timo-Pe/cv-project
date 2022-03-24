@@ -17,14 +17,11 @@
             </div>
             <div>
                 <ul class="contact">
-                    <li>Permis A et B</li>
-                    <li>06 47 87 71 36</li>
-                    <li>Timothe.perigois@gmail.com</li>
-                    <li>github.com/timo-pe</li>
-                    <li>linkedin.com/in/timothe-perigois</li>
+                {% for contact in contactList %}
+                    <li>{{contact}}</li>
+                {% endfor %}
                 </ul>
             </div>
-            
             <div class="qrcode">
                 <img href={{ asset("/assets/img/QRcode.png") }} alt="qrcode">
             </div>
@@ -32,55 +29,25 @@
         
     </header>
     <section class="left-panel">
-        <div class="training">
-            <h3>Formations</h3>
+        <div class="education">
+        <h3>Formations</h3>
+        {% for years, education in educationList %}
             <div>
-                <span class="years">2021 . 2022</span>
-                <p>Formation Développeur Web et
-                    Web Mobile Spécialisation Symfony
-                    (en préparation pour le Titre Professionnel)</p>
+                <span class="years">{{years}}</span>
+                <p>{{education}}</p>
             </div>
-            <div>
-                <span class="years">2020</span>
-                <p>Formation Autodidacte :
-                    HTML/CSS PHP/ SQL JavaScript</p>
-            </div>
-            <div>
-                <span class="years">2020</span>
-                <p>Formation Autodidacte :
-                    HTML/CSS PHP/ SQL JavaScript</p>
-            </div>
-            <div>
-                <span class="years">2020</span>
-                <p>Formation Autodidacte :
-                    HTML/CSS PHP/ SQL JavaScript</p>
-            </div>
-            <div>
-                <span class="years">2020</span>
-                <p>Formation Autodidacte :
-                    HTML/CSS PHP/ SQL JavaScript</p>
-            </div>
+            
+            {% endfor %}
         <div class="experiences">
             <h3>Experiences</h3>
+            {% for years, experiences in experiencesList %}
             <div>
-                <span class="years">2020</span>
-                <p>Formation Autodidacte :
-                    HTML/CSS PHP/ SQL JavaScript</p>
+                <span class="years">{{years}}</span>
+                {% for experience in experiences %}
+                    <p>{{experience}}</p>
+                {% endfor %}
             </div>
-            <div>
-                <span class="years">2020</span>
-                <p>Formation Autodidacte :
-                    HTML/CSS PHP/ SQL JavaScript</p>
-            </div>
-            <div>
-                <span class="years">2020</span>
-                <p>Formation Autodidacte :
-                    HTML/CSS PHP/ SQL JavaScript</p>
-            </div>
-            <div>
-                <span class="years">2020</span>
-                <p>Formation Autodidacte :
-                    HTML/CSS PHP/ SQL JavaScript</p>
+            {% endfor %}
             </div>
         </div>
     </section>
@@ -89,49 +56,33 @@
         <div class ="development-technology">
             <h4>technologies de developpement</h4>
             <ul>
-                <li>HTML et CSS</li>
-                <li>PHP | Symfony</li>
-                <li>Javascript | React</li>
-                <li>HTML et CSS</li>
-                <li>HTML et CSS</li>
-                <li>HTML et CSS</li>
-                <li>HTML et CSS</li>
-                <li>HTML et CSS</li>
-                <li>HTML et CSS</li>
-                <li>HTML et CSS</li>
-                <li>HTML et CSS</li>
-                <li>HTML et CSS</li>
+                {% for technology in technologiesList %}
+                    <li>{{technology}}</li>
+                {% endfor %}
             </ul>
         </div>
-        <div class ="computer-skills">
+        <div class ="software-skills">
         <h4>Compétences informatiques</h4>
             <ul>
-                <li>Installation et administration de serveur NAS</li>
-                <li>Installation et administration de serveur NAS</li>
-                <li>Installation et administration de serveur NAS</li>
-                <li>Installation et administration de serveur NAS</li>
-                <li>Installation et administration de serveur NAS</li>
-                <li>Installation et administration de serveur NAS</li>
-                <li>Installation et administration de serveur NAS</li>
+            {% for skill in skillsList %}
+                <li>{{skill}}</li>
+            {% endfor %}
             </ul>
         </div>
         <div class ="other-skills">
         <h4>autres competences</h4>
             <ul>
-                <li>Anglais niveau A2</li>
-                <li>Création de pièce en 3D et réalisation de plan CAO</li>
-                <li>Création de pièce en 3D et réalisation de plan CAO</li>
-                <li>Création de pièce en 3D et réalisation de plan CAO</li>
-                <li>Création de pièce en 3D et réalisation de plan CAO</li>
+                {% for otherSkill in otherSkillsList %}
+                    <li>{{otherSkill}}</li>
+                {% endfor %}
             </ul>
         </div>
         <div class ="hobbies">
         <h4>Loisirs</h4>
             <ul>
-                <li>Développement personnel</li>
-                <li>Développement personnel</li>
-                <li>Développement personnel</li>
-                <li>Développement personnel</li>
+                {% for hobbies in hobbiesList %}
+                    <li>{{hobbies}}</li>
+                {% endfor %}
             </ul>
         </div>
     </section>

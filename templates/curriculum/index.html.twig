@@ -29,23 +29,23 @@
         <section class="left-panel">
             <div class="education">
             <h3>Formations</h3>
+            <ul>
             {% for years, education in educationList %}
-                <div>
-                    <span class="years">{{years}}</span>
-                    <p>{{education}}</p>
-                </div>
+                
+                    <li><p><span class="years">{{years}}</span>{{education}}</p></li>
                 
                 {% endfor %}
+            </ul>
             <div class="experiences">
                 <h3>Experiences</h3>
-                {% for years, experiences in experiencesList %}
                 <div>
+                {% for years, experiences in experiencesList %}
                     <span class="years">{{years}}</span>
                     {% for experience in experiences %}
-                        <p>{{experience}}</p>
+                        <p>&bull; {{experience}}</p>
                     {% endfor %}
-                </div>
                 {% endfor %}
+                </div>
                 </div>
             </div>
         </section>
@@ -55,7 +55,7 @@
                 <h4>technologies de developpement</h4>
                 <ul>
                     {% for technology in technologiesList %}
-                        <li>{{technology}}</li>
+                        <li><i class="bi bi-caret-right"></i>{{technology}}</li>
                     {% endfor %}
                 </ul>
             </div>
@@ -63,7 +63,7 @@
             <h4>Compétences informatiques</h4>
                 <ul>
                 {% for skill in skillsList %}
-                    <li>{{skill}}</li>
+                    <li><i class="bi bi-caret-right"></i>{{skill}}</li>
                 {% endfor %}
                 </ul>
             </div>
@@ -71,7 +71,7 @@
             <h4>autres competences</h4>
                 <ul>
                     {% for otherSkill in otherSkillsList %}
-                        <li>{{otherSkill}}</li>
+                        <li><i class="bi bi-caret-right"></i>{{otherSkill}}</li>
                     {% endfor %}
                 </ul>
             </div>
@@ -79,7 +79,7 @@
             <h4>Loisirs</h4>
                 <ul>
                     {% for hobbies in hobbiesList %}
-                        <li>{{hobbies}}</li>
+                        <li><i class="bi bi-caret-right"></i>{{hobbies}}</li>
                     {% endfor %}
                 </ul>
             </div>

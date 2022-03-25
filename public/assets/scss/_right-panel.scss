@@ -1,4 +1,24 @@
 .right-panel{
     width: 50%;
     background-color: $dark-green;
+    padding:3em;
+    line-height: 1.7em;
+    
+    color:$cream;
+    ul{
+        margin-bottom:0.6em;
+    }
+    .bi{
+        color:$gold;
+        margin-right:0.2em;
+    }
+}
+.development-technology{
+    
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 11em;
+    }
 }

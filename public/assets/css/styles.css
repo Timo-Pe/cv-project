@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300&display=swap");
 body {
   background-color: #ffffff;
+  letter-spacing: 0.03em;
 }
 
 .container {
@@ -23,11 +24,19 @@ body {
   font-weight: 900;
 }
 .container h3 {
-  font-size: 1.7em;
-  color: #9a7b64;
+  font-size: 1.5em;
+  color: #2e5650;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 0.4em;
 }
 .container h4 {
   font-size: 1.3em;
+  color: #9a7b64;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 0.4em;
+  text-decoration: underline;
 }
 
 .panel {
@@ -86,11 +95,51 @@ body {
 .left-panel {
   width: 50%;
   background-color: #dae3dd;
+  padding: 3em;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  color: #2e5650;
+}
+.left-panel .years {
+  text-transform: uppercase;
+  color: #9a7b64;
+  font-weight: 900;
+  margin-right: 0.3em;
+}
+
+.education ul {
+  margin-bottom: 3em;
+  margin-left: 2em;
+}
+
+.experiences span {
+  margin-left: 2em;
+}
+.experiences p {
+  list-style: circle;
+  margin-left: 4em;
 }
 
 .right-panel {
   width: 50%;
   background-color: #2e5650;
+  padding: 3em;
+  line-height: 1.7em;
+  color: #f6f5f3;
+}
+.right-panel ul {
+  margin-bottom: 0.6em;
+}
+.right-panel .bi {
+  color: #9a7b64;
+  margin-right: 0.2em;
+}
+
+.development-technology ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 11em;
 }
 
 /*# sourceMappingURL=styles.css.map */

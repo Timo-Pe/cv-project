@@ -1,4 +1,34 @@
 .left-panel{
     width: 50%;
     background-color: $light-green;
+    padding:3em;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    color:$dark-green;
+
+    .years{
+        text-transform: uppercase;
+        color: $gold;
+        font-weight: 900;
+        margin-right:0.3em;
+    }
+  
+}
+.education{
+    ul{
+        margin-bottom:3em;
+        margin-left:2em;
+    }
+}
+
+.experiences{
+
+    span{
+        margin-left:2em;
+    }
+
+    p{
+        list-style: circle;
+        margin-left:4em;
+    }
 }

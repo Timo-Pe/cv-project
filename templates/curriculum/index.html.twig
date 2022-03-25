@@ -11,82 +11,79 @@
             <h2>Développeur Back-end</h2>
             <h2>PHP | Symfony</h2>
         </div>
+         
         <div class ="banner">
-            <div class ="imgPerso">
-                <img href="#" alt="imgPerso">
-            </div>
-            <div>
+        <img class="img-perso" src={{ asset('assets/img/cv-photo-web-small.png')}}>
                 <ul class="contact">
-                    <li>Permis A et B</li>
-                    <li>06 47 87 71 36</li>
-                    <li>Timothe.perigois@gmail.com</li>
-                    <li><a href='https://github.com/Timo-Pe/'  target="_blank" >github.com/timo-pe</a></li>
-                    <li><a href='https://www.linkedin.com/in/timothe-perigois/' target="_blank">linkedin.com/in/timothe-perigois</a></li>
+                    <li><i class="bi bi-truck"></i>Permis A et B</li>
+                    <li><i class="bi bi-phone"></i>06 47 87 71 36</li>
+                    <li><i class="bi bi-envelope"></i>Timothe.perigois@gmail.com</li>
+                    <li><a href='https://github.com/Timo-Pe/'  target="_blank" ><i class="bi bi-github"></i>github.com/timo-pe</a></li>
+                    <li><a href='https://www.linkedin.com/in/timothe-perigois/' target="_blank"><i class="bi bi-linkedin"></i> linkedin.com/in/timothe-perigois</a></li>
                 </ul>
-            </div>
-            <div class="qrcode">
-                <img href={{ asset("/assets/img/QRcode.png") }} alt="qrcode">
-            </div>
+                <img class="qr-code" src={{ asset('assets/img/qr-code.png')}}>
         </div>
         
     </header>
-    <section class="left-panel">
-        <div class="education">
-        <h3>Formations</h3>
-        {% for years, education in educationList %}
-            <div>
-                <span class="years">{{years}}</span>
-                <p>{{education}}</p>
-            </div>
-            
-            {% endfor %}
-        <div class="experiences">
-            <h3>Experiences</h3>
-            {% for years, experiences in experiencesList %}
-            <div>
-                <span class="years">{{years}}</span>
-                {% for experience in experiences %}
-                    <p>{{experience}}</p>
+    <section class ="panel">
+        <section class="left-panel">
+            <div class="education">
+            <h3>Formations</h3>
+            {% for years, education in educationList %}
+                <div>
+                    <span class="years">{{years}}</span>
+                    <p>{{education}}</p>
+                </div>
+                
                 {% endfor %}
+            <div class="experiences">
+                <h3>Experiences</h3>
+                {% for years, experiences in experiencesList %}
+                <div>
+                    <span class="years">{{years}}</span>
+                    {% for experience in experiences %}
+                        <p>{{experience}}</p>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+                </div>
             </div>
-            {% endfor %}
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class ="right-panel">
-        <div class ="development-technology">
-            <h4>technologies de developpement</h4>
-            <ul>
-                {% for technology in technologiesList %}
-                    <li>{{technology}}</li>
+        <section class ="right-panel">
+            <div class ="development-technology">
+                <h4>technologies de developpement</h4>
+                <ul>
+                    {% for technology in technologiesList %}
+                        <li>{{technology}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class ="software-skills">
+            <h4>Compétences informatiques</h4>
+                <ul>
+                {% for skill in skillsList %}
+                    <li>{{skill}}</li>
                 {% endfor %}
-            </ul>
-        </div>
-        <div class ="software-skills">
-        <h4>Compétences informatiques</h4>
-            <ul>
-            {% for skill in skillsList %}
-                <li>{{skill}}</li>
-            {% endfor %}
-            </ul>
-        </div>
-        <div class ="other-skills">
-        <h4>autres competences</h4>
-            <ul>
-                {% for otherSkill in otherSkillsList %}
-                    <li>{{otherSkill}}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class ="hobbies">
-        <h4>Loisirs</h4>
-            <ul>
-                {% for hobbies in hobbiesList %}
-                    <li>{{hobbies}}</li>
-                {% endfor %}
-            </ul>
-        </div>
+                </ul>
+            </div>
+            <div class ="other-skills">
+            <h4>autres competences</h4>
+                <ul>
+                    {% for otherSkill in otherSkillsList %}
+                        <li>{{otherSkill}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class ="hobbies">
+            <h4>Loisirs</h4>
+                <ul>
+                    {% for hobbies in hobbiesList %}
+                        <li>{{hobbies}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
     </section>
 </div>
 {% endblock %}

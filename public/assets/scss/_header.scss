@@ -1,31 +1,59 @@
-header{
-    width: 100%;
-    display: flex;
-    flex-direction:column;
+.container header{
+    margin-bottom:1.8em;
     .title{
         text-align: right;
         margin-bottom:2em;
+        line-height: 2.3em;
+        letter-spacing: 0.2em;
+        h1{
+            margin-bottom: 0.2em;
+        }
     }
 }
 .banner{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-    border:solid 2px black;
+    justify-content: flex-end;
+    background-color: $gold;
+    color:$cream;
+    height: 10rem;
+    position:relative;
+    align-self: center;
 
+    a{
+        color:$cream;
+        text-decoration: none;
+    }
+    .bi{
+        font-size: 1.5em;
+    }
+
+    
     .contact{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-transform: uppercase;
+        margin:auto auto auto 21em;
+        li{
+            line-height: 1.8em;
+            text-transform: uppercase;
+            i{
+                margin-right:0.5em;
+            }
+        }
     }
-    .qrcode{
-        width: 33%;
+    .qr-code{
+            margin-right:20px,
     }
-    .imgPerso{
-        width: 33%;
+    .img-perso{
+        bottom:0px;
+        position:absolute;
+        left:1.5em;
     }
+    
 }
+
+
+
+
+
 
 
 
